@@ -1,38 +1,106 @@
 .App {
-  text-align: center;
+	max-width: 1250px;
+	margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.message-container {
+	display: flex;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.message p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	width: 220px;
+	height: 50px;
+	background-color: rgb(221, 212, 215);
 }
 
-.App-link {
-  color: #61dafb;
+.create-new-person {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 40px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-btn {
+	background-color: #63b170;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: 600;
+}
+
+.sorting-button-container {
+	width: 100%;
+	text-align: right;
+}
+
+.sorting-button-container button {
+	padding: 5px 10px;
+	margin: 0 5px 10px 0;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+}
+
+form > * {
+	margin-left: 10px;
+}
+
+.banking-list {
+	text-align: center;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid black;
+}
+
+thead th {
+	width: 15%;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+#add-money,
+#deduct-money,
+#delete-btn,
+#sort-button {
+	color: white;
+	font-weight: 600;
+}
+
+#add-money {
+	background-color: #535c60;
+}
+
+#deduct-money {
+	background-color: #117aff;
+}
+
+#delete-btn {
+	background-color: rgb(215, 71, 71);
+}
+
+#sort-button {
+	background-color: rgb(164, 165, 166);
 }
